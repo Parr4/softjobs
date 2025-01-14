@@ -39,6 +39,7 @@ const Register = () => {
         navigate('/login')
       })
       .catch(({ response: { data } }) => {
+        console.log("hola", data)
         console.error(data)
         window.alert(`${data.message} 🙁.`)
       })
